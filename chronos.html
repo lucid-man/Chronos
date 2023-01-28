@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="chronos.css">
+</head>
+<body>
+    
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/hourglass.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top">
+                Chronos
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="container text-center">
+
+        <div class="clocks-container">
+
+            <div id="clockcontainer-0" class="one-clock-container">
+                <h4 class="clock-timezone-text">EUROPE / GDAŃSK</h1>
+                <canvas id="canvas_current_time_clock" width="200" height="200"></canvas>
+                <h5 class="clock-time-text">11:52 AM</h2>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="controlls-container">
+
+            <div class="add-new-clock-container">
+                <h3>Add another timezone</h3>
+                <label class="form-label" for="city-name-input">City:</label>
+                <input class="form-control" type="text" name="" id="city-name-input" placeholder="Enter a city name">
+                <button class="btn btn-primary mt-1" id="add-clock-btn">ADD CLOCK</button>
+            </div>
+            
+
+        </div>
+        
+
+    </div>
+
+    <div class="overlay-container">
+
+        <div class="overlay-content">
+            <img src="images/chronos-hourglass.gif" alt="" srcset="">
+        </div>
+
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
+    <script src="chronos.js"></script>
+    
+</body>
+</html>
